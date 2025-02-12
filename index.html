@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StoryMagic AI - Custom Stories for Kids</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #f0f9ff;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Bubblegum Sans', cursive;
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .how-it-works {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+        }
+
+        .step h3 {
+            color: #ff6b6b;
+            font-family: 'Bubblegum Sans', cursive;
+            margin-bottom: 1rem;
+        }
+
+        .step-number {
+            background: #ffd93d;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 3rem auto;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            font-family: 'Bubblegum Sans', cursive;
+            background-color: #4ecdc4;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            background-color: #45b7af;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>✨ StoryMagic AI ✨</h1>
+        <p style="color: white; font-size: 1.2rem;">Where Every Child Becomes the Hero of Their Own Story!</p>
+    </header>
+
+    <div class="container">
+        <div class="how-it-works">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Tell Us About Your Child</h3>
+                <p>Share your child's name, age, interests, and what makes them special. The more details, the more magical the story!</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Choose Your Adventure</h3>
+                <p>Select from exciting themes like space exploration, underwater discovery, magical kingdoms, or create your own!</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Receive Your Story</h3>
+                <p>Our AI crafts a unique, personalized story featuring your child as the main character. Ready to read in minutes!</p>
+            </div>
+        </div>
+
+        <button class="cta-button">Get Your Story Now! 📚</button>
+    </div>
+</body>
+</html>
